@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import GameCard from "../game-card/GameCard.jsx"
 
 export default function Catalog() {
 
@@ -19,14 +20,7 @@ export default function Catalog() {
             {/* <!-- Display div: with information about every game (if any) --> */}
             <div className="catalog-container">
 
-                <div className="game">
-                    <img src="./images/witcher.png" alt="The Witcher 3" />
-                    <div className="details-overlay">
-                        <p className="name">The Witcher 3</p>
-                        <p className="genre">Open World</p>
-                        <a href="#" className="details-button">Details</a>
-                    </div>
-                </div>
+                {games.map(game => <GameCard key={game._id} {...game} />)}
 
             </div>
             {/* <!-- Display paragraph: If there is no games  --> */}
