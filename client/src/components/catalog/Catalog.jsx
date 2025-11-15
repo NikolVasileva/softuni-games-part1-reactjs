@@ -1,4 +1,18 @@
+import { useEffect, useState } from "react"
+
 export default function Catalog() {
+
+    const[games, setGames] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:3030/jsonstore/games")
+        .then(response => response.json())
+        .then(data => {
+            setGames(Object.values(data))
+        }) 
+        .catch(err => alert(err.message))
+    }, [])
+
     return (
         <section id="catalog-page">
             <h1>Catalog</h1>
