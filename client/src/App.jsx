@@ -1,3 +1,4 @@
+import { Routes } from "react-router"
 import Footer from "./components/footer/Footer.jsx";
 import Header from "./components/header/Header.jsx";
 import Home from "./components/home/Home.jsx";
