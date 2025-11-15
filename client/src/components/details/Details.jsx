@@ -43,7 +43,7 @@ export default function Details() {
                     <a href="#" className="button">Delete</a>
                 </div>
 
-                <div className="details-comments">
+                {/* <div className="details-comments">
                     <h2>Comments:</h2>
                     <ul>
                         <li className="comment">
@@ -53,19 +53,19 @@ export default function Details() {
                             <p>Content: Truly feels like a next-gen evolution of the Souls formula!</p>
                         </li>
                     </ul>
-                    {/* <!-- Display paragraph: If there are no games in the database -->
-                        <!-- <p className="no-comment">No comments.</p> --> */}
-                </div>
+                    <!-- Display paragraph: If there are no games in the database -->
+                        <!-- <p className="no-comment">No comments.</p> -->
+                </div> */}
 
             </div>
             {/* <!-- Add Comment ( Only for logged-in users, which is not creators of the current game ) --> */}
-            <article className="create-comment">
+            {/* <article className="create-comment">
                 <label>Add new comment:</label>
                 <form className="form">
                     <textarea name="comment" placeholder="Comment......"></textarea>
                     <input className="btn submit" type="submit" value="Add Comment" />
                 </form>
-            </article>
+            </article> */}
         </section>
     )
 }
